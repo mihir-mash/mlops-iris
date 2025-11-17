@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Deploy Model') {
       steps {
-        sh 'cp iris_model.pkl /home/ubuntu/app/'
+        sh 'cp iris_model.pkl /var/ml_api/'
       }
     }
   }
