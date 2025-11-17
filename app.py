@@ -3,7 +3,7 @@ import joblib, numpy as np
 from datetime import datetime
 
 app = Flask(__name__)
-model = joblib.load("iris_model.pkl")
+model = joblib.load("/home/ubuntu/app/iris_model.pkl")
 LOG_FILE = "/var/log/ml_api.log"
 
 @app.route('/predict', methods=['POST'])
